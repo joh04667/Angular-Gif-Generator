@@ -16,8 +16,8 @@
   </div>
 
 
-    <input type="text" ng-model="randomtext" />
-
+    <input type="text" ng-model="searchText" ng-keyup="$event.keyCode == 13 && gifSearch()"/>
+      <img ng-src="{{searchGif.image_url}}" />
 
   <div class="randomsearch">
 
